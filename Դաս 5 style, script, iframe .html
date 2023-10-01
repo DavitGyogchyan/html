@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<!-- 
+  style, 
+  script, 
+  iframe
+
+  class
+  id
+ -->
+  <style>
+    .parent{
+      width: 500px;
+      height: 500px;
+      background: red;
+      color: white;
+      font-size: 30px;
+    }
+    #someid{
+      width: 300px;
+      height: 300px;
+      background: cyan;
+      color: #5d5d5d;
+      font-size: 60px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+ 
+
+<!-- style-ը, դա CSS-ի թեգն է, երբ HTML-ի մեջ CSS ենք գրում -->
+<!-- script թեգը, դա JS-ի թեգն է -->
+<!-- iframe թեգը, դա արտաքին պատուհան է կոչվում HTML-ի մեջ։ Դրանով 
+     հիմնականում YouTube-ից վիդեոներ ենք դնում HTML դոկումենտի մեջ, կամ 
+     ինչ-որ Google map-ի քարտեզ եվ այլն։
+-->
+
+
+<!-- CSS-ը, հիմնականում գրում ենք head-ի մեջ, որովհետեվ browser-ը կայքը 
+  կարդում է վերեվից ներքեվ։ 
+  
+Իսկ script-ը, body-ի ամենավերջում, փակվող body-ից առաջ, որպեսզի սերվերից գա 
+HTML-ը, հետո գա CSS-ը, հետո նոր JavaScript-ը։
+
+Դա այդպես է, որովհետեվ HTML-ը, CSS-ը շատ արագ աշխատող լեզուներ են, ու իրենք
+շատ արագ են։ Եթե ճիշտ է հավաքված կայքի կարկասը, իրենք, թէ HTML-ը, թէ CSS-ը,
+շատ արագ են բացում browser-ի կողմից։ 
+Իսկ JavaScript-ը, դանդաղ է բացում։ 
+ -->
+
+
+<div class="parent">
+  some text
+</div>
+<!-- Ստեղծենք մեկ ուրիշ div, արկղ։ Եվ մեր արկղին տվեցինք գույն 5d5d5d, եվ
+  background: cyan 
+-->
+
+<div id="someid"> div id</div>
+
+
+
+<script>
+  alert("Բարեվ Հայեր");
+</script>
+
+<!-- Եվ ուշադրություն դարձնենք, որ ներսի կոնտենտը գոյություն չունի ներկա
+պահին։ —Ինչի՞։ 
+— Որովհետեվ սկզբից JavaScript-ն է loading լինում, դրանից հետո արդեն նոր 
+HTML-ը, CSS-ը։
+Եթե alert-ին տանք OK, կտեսնենք որ եկան HTML-ը, CSS-ը։
+
+
+
+
+DOM-ը, դա HTML ծառն է։
+ body
+    div
+       div
+          div
+-->
+
+
+
+                          <!-- iframe -->
+
+<!-- iframe, արտաքին պատուհան, որը թույլ է տալիս ստանալ ցանկացած 
+iframe էլեմենտ։ -->
+
+<!-- Հասկանանք iframe-ը։ 
+Ստեղծենք div, տանք class։
+Մտնենք մեր վիդեոն, 
+սեղմենք Поделиться,  - - - > Встроить, 
+եվ ամբողջ տեքստը copy ենք անում ,
+եվ դնում ենք մեր վիդեո div-ի մեջ։
+
+-->
+
+<div class="video">
+  <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/n_qtkSay9hQ" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe>
+
+</div>
+
+<!-- Տեսնում ենք, որ այս վիդեոն responsive չէ։ 
+Այսինքն, էկրանի լայնությունը փոփոխելուց, վիդեոն չի փոքրանում կամ 
+մեծանում։ 
+Այս խնդիրը լուծվում է CSS-ով։ --> 
+
+
+
+
+
+<!-- Այստեղ փորձենք քարտեզ դնել։ 
+Դնենք Google-ի քարտեզը։ 
+Մտնենք Google maps, ընտրենք մեր հանրապետության հրապարակը, 
+սեղմենք Поделиться,
+հնարավորություն ունենք ընտրելու մի քանի ձեվով։
+Ունենք facebook, ունենք twitter, ունենք որպես link․․․
+Տալիս ենք Insertar un mapa  - - - >  COPIAR HTML
+-->
+
+<div id = "map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.390972218713!2d44.511952865388636!3d40.17811172939353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfa28499691%3A0x2bde14d127166c74!2sPlaza%20de%20la%20Rep%C3%BAblica!5e0!3m2!1ses!2ses!4v1653961433079!5m2!1ses!2ses" 
+  width="600" height="450" style="border:0;" allowfullscreen="" 
+  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- 
+Եվ ահա, Google-ը մեզ համար պատրաստեց։
+Ի՞նչ է այդտեղ գրվաշ։
+www.google.com     - - > google կայքը,
+/maps              - - > այսինքն, իրենց maps application-ի մեջ ենք,
+/embed             - - > տալիս է իր embed-ը,
+pb= ․․․․․          - - > եվ տալիս է իր կոորդինատները։
+-->
+   
+</body>
+</html>
