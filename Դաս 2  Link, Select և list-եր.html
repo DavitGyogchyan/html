@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2</title>
+</head>
+<body>
+
+  <!-- Link -->
+  <!-- List -->
+  <!-- Select -->
+
+
+
+                        <! -- Link -->
+
+  <!--
+  Գոյություն ունի Link-երի 2 տեսակ։ Առաջին տեսակի Link-երը, դրանք 
+  local Link-երն են, որոնք գտնվում են մեր համակարգչի մեջ, որը հետո backend
+  ծրագրավորողը դարձնում է դինամիկ։ 
+  Օրինակ եթե անենք այսպես a href="www.google.com"Google /a 
+  ծրագիրը կսկսի փնտրել մեր համակարգչի մեջ եվ Google չենք կարող մտնել, error 
+  կտա։ 
+  Google մուտք գործելու համար, պետք է գրենք նաեվ https:// 
+-->
+
+<a href="https://www.google.com">Google</a>
+<br>
+<br>
+
+<!-- Այսպես կարող ենք մուտք գործել մեր local Link։
+Նույնպես այդ ֆայլից կարելի է հղում ստեղծել դեպի մեր այս էջը։ Եվ կապ 
+կստեղծենք 2 էջերի միջեվ։
+-->
+
+<a href="Դաս 1։ Ծանոթանում ենք HTML-ի հետ.html">My local link to html file</a>
+
+<!-- Եթե ցանկանում ենք որպեսզի հղումը բացվի նոր էջում, ապա կօգտագործենք
+target = "_blank" -->
+<br>
+<br>
+
+<a href="https://www.google.com" target="_blank">Google in new page</a>
+
+
+
+ 
+
+
+
+                         <! -- List -->
+
+
+
+
+<!-- unordered list -->
+<ul>
+  <p>Սուրճի տեսակներ</p>
+  <li>Դառը</li>
+  <li>Քաղցր</li>
+  <li>Սառը</li>
+  <li>Էքսպրեսո</li>
+</ul>
+
+<!-- ul նշանակում է unordered list, որը համարակալված չէ, եվ ուղղակի 
+կետերով է։ Բայց իհարկե դա կարող ենք փոփոխել CSS-ով: 
+ -->
+
+ <br>
+ <br>
+
+ <!-- ordered list -->
+ <ol>
+  <p>Սուրճի տեսակներ</p>
+  <li>Դառը</li>
+  <li>Քաղցր</li>
+  <li>Սառը</li>
+  <li>Էքսպրեսո</li>
+</ol>
+
+<br>
+<br>
+
+<!-- ordered list -->
+
+<ol type = "a">
+ <p>Սուրճի տեսակներ</p>
+ <li>Դառը</li>
+ <li>Քաղցր</li>
+ <li>Սառը</li>
+ <li>Էքսպրեսո</li>
+</ol>
+
+<br>
+<br>
+
+<!-- ordered list -->
+
+<ol type = "I">
+ <p>Սուրճի տեսակներ</p>
+ <li>Դառը</li>
+ <li>Քաղցր</li>
+ <li>Սառը</li>
+ <li>Էքսպրեսո</li>
+</ol>
+
+<br>
+<br>
+
+<!-- ordered list -->
+
+<ol start = "15">
+ <p>Սուրճի տեսակներ</p>
+ <li>Դառը</li>
+ <li>Քաղցր</li>
+ <li>Սառը</li>
+ <li>Էքսպրեսո</li>
+</ol>
+
+
+<br>
+<br>
+
+
+
+
+                          <! -- Select -->
+
+
+
+
+<p>Ընտրեք Ամիսը</p>
+<select>
+  <option>Հունվար</option>
+  <option>Փետրվար</option>
+  <option>Մարտ</option>
+  <option>Ապրիլ</option>
+  <option>Մայիս</option>
+  <option>Հունիս</option>
+  <option>Հուլիս</option>
+  <option>Օգոստոս</option>
+  <option>Սեպտեմբեր</option>
+  <option>Հոկտեմբեր</option>
+  <option>Նոյեմբեր</option>
+  <option>Դեկտեմբեր</option>
+</select>                        
+
+<br>
+<br>
+
+<!-- select-ում, գոյություն ունի նաեվ optgruoup: optgruoup-ը, իր մեջ 
+սարքում է լիստերմ որոնք գտնվում են իր ենթավերնագրի տակ։ 
+Օրինակ, սարքենք տարվա եղանակների 4 ամիսների optgruoup-ը։ 
+Իրեն տալիս ենք label ատրիբուտը։ label, դա հենց այն ատրիբուտն է, որի շնորհիվ,
+իր անունը երեվում է select-ի մեջ։ Մենք չենք կարող ընտրել optgroup-ին։ -->
+
+<br>
+<br>
+
+<p>Ընտրեք Ամիսը</p>
+<select>
+
+  <optgroup label="Գարնան ամիսներ">
+    <option>Մարտ</option>
+    <option>Ապրիլ</option>  
+    <option>Մայիս</option>
+  </optgroup>
+  <optgroup label="Ամռան ամիսներ">
+    <option>Հունիս</option>
+    <option>Հուլիս</option>
+    <option>Օգոստոս</option>
+  </optgroup>
+  <optgroup label="Աշնան ամիսներ">
+    <option>Սեպտեմբեր</option>
+    <option>Հոկտեմբեր</option>
+    <option>Նոյեմբեր</option>
+  </optgroup>
+  <optgroup label="Ձմեռվա ամիսներ">
+    <option>Դեկտեմբեր</option>
+    <option>Հունվար</option>
+    <option>Փետրվար</option>
+  </optgroup>
+
+</select>                        
+
+<!-- Այն default ընտրում է Մարտ-ը, բայց մենք կարող ենք որպես նաքնական 
+արժեք դնել մեր ուզած ամիսը։ Պարզապես գրում ենք selected -->
+
+<br>
+<br>
+
+<p>Ընտրեք Ամիսը</p>
+<select>
+
+  <optgroup label="Գարնան ամիսներ">
+    <option value="March">Մարտ</option>
+    <option>Ապրիլ</option>  
+    <option>Մայիս</option>
+  </optgroup>
+  <optgroup label="Ամռան ամիսներ">
+    <option>Հունիս</option>
+    <option>Հուլիս</option>
+    <option>Օգոստոս</option>
+  </optgroup>
+  <optgroup label="Աշնան ամիսներ">
+    <option>Սեպտեմբեր</option>
+    <option>Հոկտեմբեր</option>
+    <option>Նոյեմբեր</option>
+  </optgroup>
+  <optgroup label="Ձմեռվա ամիսներ">
+    <option>Դեկտեմբեր</option>
+    <option selected>Հունվար</option>
+    <option value="February">Փետրվար</option>
+  </optgroup>
+
+</select>   
+
+
+<!-- option-ները ունեն նաեվ ատրիբուտ, որը պարտադիր է, որպեսզի backend 
+developer-ը այդ ատրիբուտներով կարողանա աշխատել, դա value ատրիբուտն է։ -->
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
